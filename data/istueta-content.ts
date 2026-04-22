@@ -9,6 +9,7 @@ export const hero = {
   subheadline: "High-end residential remodeling in South Florida. Kitchens, bathrooms, and full home renovations built to last.",
   cta: "Start Your Project",
   secondaryCta: "View Our Work",
+  backgroundImage: "/istueta-hero.jpg",
 };
 
 export const trustBand = {
