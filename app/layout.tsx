@@ -15,8 +15,8 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Istueta Construction | Luxury Home Remodeling in South Florida",
-  description: "High-end residential remodeling and construction in South Florida. Luxury kitchens, bathrooms, and full home renovations.",
+  title: "Istueta Roofing | 41 Years Installing South Florida's Best Roofs",
+  description: "Family-owned roofing contractor since 1985. Tile, metal, and flat roofs built to outlive Miami hurricanes. Factory-certified. 78% referral rate. 4.8★ average.",
 };
 
 export default function RootLayout({

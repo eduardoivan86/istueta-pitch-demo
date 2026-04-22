@@ -5,11 +5,26 @@ interface SectionProps {
   children: ReactNode;
   className?: string;
   id?: string;
+  tone?: "dark" | "darker" | "cream" | "hero";
 }
 
-export default function Section({ children, className, id }: SectionProps) {
+const toneStyles = {
+  dark: "bg-bg-dark text-fg-primary",
+  darker: "bg-bg-darker text-fg-primary",
+  cream: "bg-bg-cream text-foreground",
+  hero: "bg-bg-dark text-fg-primary",
+};
+
+export default function Section({ children, className, id, tone }: SectionProps) {
   return (
-    <section id={id} className={cn("py-16 md:py-24", className)}>
+    <section
+      id={id}
+      className={cn(
+        "py-16 md:py-24",
+        tone && toneStyles[tone],
+        className
+      )}
+    >
       {children}
     </section>
   );
