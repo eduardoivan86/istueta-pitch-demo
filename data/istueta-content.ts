@@ -136,3 +136,78 @@ export const compareKivoRows: CompareRow[] = [
   { text: "Every answered call is a roof you could install.", isPositive: true },
 ];
 
+export const phases: Phase[] = [
+  { number: 1, name: "Foundation", duration: "Weeks 1-2", deliverables: ["Voice agent live on your business line", "Trained on Istueta services, pricing, process", "English + Spanish fluency", "Appointment booking integrated with your calendar", "Lead capture + CRM sync"], typicalCapacity: "Handles 100% of inbound calls. Books consultations. Captures every lead." },
+  { number: 2, name: "Expansion", duration: "Weeks 3-6", deliverables: ["Chat widget on website", "WhatsApp business integration", "Automated quote follow-ups", "Dormant lead reactivation campaigns", "Custom triggers (e.g., 'roof over 15 years old' → send maintenance offer)"], typicalCapacity: "Reactivates 20-40 dormant leads/month. Converts 15-25% to jobs." },
+  { number: 3, name: "Multi-Channel", duration: "Weeks 7-10", deliverables: ["SMS campaigns for hurricane prep offers", "Referral incentive automation", "Post-job review requests", "Warranty/maintenance reminders", "Seasonal campaigns (hurricane season, insurance renewal season)"], typicalCapacity: "Generates 30-50 new conversations/month from existing customer base." },
+  { number: 4, name: "Revenue Recovery", duration: "Weeks 11-12", deliverables: ["Recovery campaigns for lost estimates", "Competitive win-back offers", "Upsell triggers (e.g., repair → full replacement)", "Annual revenue impact report"], typicalCapacity: "Recovers 10-20% of previously lost opportunities. Avg $120K-$250K/year." },
+];
+
+export const capabilities: Capability[] = [
+  { number: "01", title: "VOICE", description: "Answers every call in under 3 seconds. Books appointments. Sends quotes. Speaks English and Spanish fluently. Sounds human because it is — trained on 41 years of your expertise." },
+  { number: "02", title: "CHAT", description: "Website chat widget that doesn't feel like a bot. Answers roof questions. Shares portfolio examples. Schedules showroom visits. Captures emails and phone numbers." },
+  { number: "03", title: "LANGUAGES", description: "Fluent English and Spanish. Auto-detects language preference. Responds in the customer's language instantly. No awkward handoffs." },
+  { number: "04", title: "AUTOMATIONS", description: "Follow-ups. Appointment reminders. Quote expirations. Maintenance reminders. Referral requests. Hurricane prep offers. Runs 24/7 without your input." },
+  { number: "05", title: "INVENTORY", description: "Knows what you install. Ludowici tile. GAF shingles. Metal roofing. Flat systems. Explains materials, warranties, and lead times like your best salesperson." },
+  { number: "06", title: "TRIGGERS", description: "Custom rules that fire automatically. 'Roof over 20 years old' → send replacement quote. 'Hurricane season starts' → send prep checklist. You set it once. It runs forever." },
+  { number: "07", title: "INTEGRATIONS", description: "Syncs with your CRM, calendar, email, and phone system. Logs every call. Updates every lead. Sends daily summaries. Works with the tools you already use." },
+  { number: "08", title: "MANAGED", description: "Kivo handles updates, training, and optimization. You don't manage the agent — you just see the results. New service? New pricing? We update it in 24 hours." },
+];
+
+export const cases: CaseStudy[] = [
+  { clientName: "Harvey Windows (Renewal by Andersen dealer)", industry: "Residential window replacement", challenge: "High-end product ($15K-$40K jobs) but every call during install goes to voicemail. Lost 35-50% of inbound leads.", solution: "Kivo voice agent answers 100% of calls. Books in-home consultations. Speaks English + Spanish. Sends brochures instantly.", results: ["93% call answer rate (up from 52%)", "41% increase in booked consultations", "$340K additional revenue in first 90 days", "Agent now handles after-hours and weekend leads autonomously"] },
+  { clientName: "JP Medical Center", industry: "Healthcare", challenge: "Bilingual patient base. Receptionist overwhelmed. 22% of calls abandoned.", solution: "Kivo voice agent for appointment booking, insurance verification, and FAQs.", results: ["Call abandonment dropped to 3%", "18% increase in appointment bookings", "Spanish-speaking patients now get instant service"] },
+  { clientName: "Dental Care Deerfield", industry: "Dental practice", challenge: "After-hours calls go to voicemail. Emergency patients call competitors.", solution: "Kivo 24/7 voice agent. Triages emergencies. Books appointments.", results: ["32% increase in emergency bookings", "After-hours revenue up $87K/year", "Patient satisfaction score improved 29%"] },
+  { clientName: "Lumber Plus Miami", industry: "Building materials", challenge: "Contractors call during jobsite visits. Need quotes fast or they buy elsewhere.", solution: "Kivo answers calls, sends quotes, checks inventory, schedules pickups.", results: ["Quote turnaround time: 12min → 90sec", "23% increase in same-day orders", "$520K additional revenue/year"] },
+];
+
+export const projectionIstueta: ProjectionScenario[] = [
+  { name: "Conservative", description: "Kivo answers 90% of inbound calls. Converts at current close rate.", monthlyLeads: 15, conversionRate: 0.35, avgJobValue: 12000, annualRevenue: 756000 },
+  { name: "Realistic", description: "Kivo + dormant lead reactivation + after-hours capture.", monthlyLeads: 22, conversionRate: 0.4, avgJobValue: 12000, annualRevenue: 1267200 },
+  { name: "Optimistic", description: "Full multi-channel deployment + hurricane season campaigns.", monthlyLeads: 30, conversionRate: 0.45, avgJobValue: 12500, annualRevenue: 2025000 },
+];
+
+export const pricingTiers: PricingTier[] = [
+  { name: "Foundation", setupPrice: 3500, monthlyPrice: 2500, features: ["Voice agent on business line", "English + Spanish", "Appointment booking", "Lead capture + CRM sync", "Call logs and transcripts", "Email/SMS notifications", "Standard support"], cta: "Start with Foundation" },
+  { name: "Growth", setupPrice: 5000, monthlyPrice: 3000, recommended: true, features: ["Everything in Foundation", "Website chat widget", "WhatsApp integration", "Automated follow-ups", "Dormant lead reactivation", "Custom triggers (5 included)", "Monthly performance reports", "Priority support"], cta: "Choose Growth (Recommended)" },
+  { name: "Complete", setupPrice: 7500, monthlyPrice: 3500, features: ["Everything in Growth", "SMS campaigns", "Referral automation", "Review requests", "Warranty/maintenance reminders", "Seasonal campaigns", "Unlimited custom triggers", "Dedicated account manager", "Quarterly strategy sessions"], cta: "Go Complete" },
+];
+
+export const roiModel: ROIRow[] = [
+  { label: "Missed call recovery", currentCost: "$432K/year lost", withKivo: "$43K/year lost (90% capture)", savings: "$389K/year" },
+  { label: "After-hours leads", currentCost: "$0 (all lost)", withKivo: "$180K/year captured", savings: "$180K/year" },
+  { label: "Dormant lead reactivation", currentCost: "$0 (manual, inconsistent)", withKivo: "$95K/year", savings: "$95K/year" },
+  { label: "Staff cost (receptionist)", currentCost: "$48K/year", withKivo: "$36K/year (Growth tier)", savings: "$12K/year" },
+  { label: "Total annual impact", currentCost: "", withKivo: "", savings: "$676K/year" },
+  { label: "Break-even timeline", currentCost: "", withKivo: "Month 1 (first recovered job covers setup + 2 months)" },
+];
+
+export const pilotClause = \`Start with a 30-day pilot on the Foundation tier. If Kivo doesn't book at least 5 qualified appointments in the first 30 days, we refund 100% of your setup fee. No questions. No fine print. We're confident because we've done this for contractors just like you.\`;
+
+export const faqs: FAQItem[] = [
+  { question: "Does this replace my staff?", answer: "No. Kivo handles repetitive tasks — answering calls, booking appointments, sending quotes, following up on leads. Your team focuses on selling, installing, and building relationships. Think of Kivo as your 24/7 front desk, not a replacement for your people." },
+  { question: "How long does setup take?", answer: "2 weeks for Foundation, 4-6 weeks for Growth or Complete. We handle everything: call forwarding, CRM integration, agent training. You give us your services, pricing, and process. We build the agent. You approve it. Then it goes live." },
+  { question: "What if a customer asks something the agent doesn't know?", answer: "Kivo escalates to you instantly. It knows when to hand off. Complex engineering questions? Custom material requests? Kivo says: 'Let me connect you with our lead estimator' and sends you a notification. You stay in control." },
+  { question: "Can I update pricing or services myself?", answer: "On Growth and Complete tiers, yes — you get a dashboard. On Foundation, submit updates to us and we push them live within 24 hours. No dev work required." },
+  { question: "Does it actually sound human?", answer: "Listen to the demo in the Landing tab. Kivo uses Vapi's latest voice models, trained on real roofing conversations. It doesn't sound like Siri. It sounds like Maria — because it is." },
+  { question: "What happens during a hurricane?", answer: "Kivo scales infinitely. When call volume spikes 10x, Kivo handles it. No busy signals. No voicemail. Every lead captured. Every emergency triaged. You focus on the roofs. Kivo handles the phones." },
+  { question: "How do I know it's working?", answer: "Daily email summaries. Weekly performance reports. Real-time dashboard (Growth and Complete tiers). You see: calls answered, appointments booked, quotes sent, revenue attributed. Full transparency." },
+  { question: "What if I want to cancel?", answer: "Monthly billing. No long-term contract. Cancel anytime with 30 days' notice. We're confident you won't — but the option is there." },
+];
+
+export const proximosPasos = [
+  { step: "01", title: "SIGN", description: "Choose your tier. Sign the agreement. Pay setup fee." },
+  { step: "02", title: "DISCOVERY", description: "30-minute kickoff call. We learn your services, pricing, process, and tone. You approve the agent script." },
+  { step: "03", title: "LIVE", description: "Agent goes live. You start capturing every lead. We monitor performance and optimize for 90 days." },
+];
+
+export const hurricaneSeasonCallout = {
+  text: "Hurricane season starts June 1.",
+  subtext: "The roofers who answer first get the jobs. Let's make sure that's you.",
+};
+
+export const proposalFooterContent = {
+  brandLine: "Kivo · Commercial-agent platform for businesses that close on the phone",
+  contact: "Eduardo Collazos · eduardoivan86@gmail.com · (954) 804-8855",
+  family: "Built by Kivo Studio — the same team behind Harvey Windows, JP Medical, and Lumber Plus agents.",
+};
