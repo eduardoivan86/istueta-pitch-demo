@@ -25,7 +25,7 @@ export default function TabShell({ landingTab, proposalTab }: TabShellProps) {
                   : "border-transparent text-stone-600 hover:text-stone-900"
               }`}
             >
-              Public Site
+              Landing
             </button>
             <button
               onClick={() => setActiveTab("proposal")}
@@ -35,7 +35,7 @@ export default function TabShell({ landingTab, proposalTab }: TabShellProps) {
                   : "border-transparent text-stone-600 hover:text-stone-900"
               }`}
             >
-              Client Proposal
+              Proposal
             </button>
           </div>
         </div>
